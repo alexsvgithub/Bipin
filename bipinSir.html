@@ -22,6 +22,19 @@
       padding: 15px;
     }
 
+    .hide{
+    display:none;
+    }
+
+    .show{
+    display:block;
+    }
+
+    @media print {
+      @page { margin: 0; }
+      body { margin: 1.6cm; }
+    }
+
   </style>
 
 </head>
@@ -39,10 +52,10 @@
       <th style="vertical-align: middle;"><h1 style="font-family: Arial, Helvetica, sans-serif;">Some broad description</h1></th>
     </tr>
     <tr>
-      <td> Name of Student: <input type="text">
+      <td> Name of Student: <input type="text" class="a" >
        
       </td>
-      <td>Standard: <input type="text"></td>
+      <td>Standard: <input type="text" class="a" ></td>
     </tr>
   
   </table>
@@ -55,7 +68,7 @@
     <tr>
       <!-- onclick="add_fields();" -->
       <!-- onclick="add_fields();" -->
-        <td>Marathi<br><button id="1" >add </button></td>
+        <td>Marathi<br><button id="1" class="b">add </button></td>
         <td>
             <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
             <datalist id="browsers">
@@ -71,7 +84,7 @@
         </td>
     </tr>
     <tr>
-      <td>Hindi<br><button id="2" >add </button></td>
+      <td>Hindi<br><button id="2"  class="b">add </button></td>
       <td>
           <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
           <datalist id="browsers">
@@ -87,7 +100,7 @@
       </td>    
     </tr>
     <tr>
-        <td>English<br><button id="3" >add </button></td>
+        <td>English<br><button id="3"  class="b">add </button></td>
         <td>
 
           <input class="a"  list="browsers" name="browser" id="browser" style="display:table-cell; width:99.5% ; height: 100%;">
@@ -106,7 +119,7 @@
         </td>
       </tr>
       <tr>
-        <td>maths<br><button id="4" >add </button></td>
+        <td>maths<br><button id="4"  class="b">add </button></td>
         <td>
 
           <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:99.5% ; height: 100%;">
@@ -125,7 +138,7 @@
         </td>
       </tr>
       <tr>
-        <td>Science<br><button id="5" >add </button></td>
+        <td>Science<br><button id="5"  class="b">add </button></td>
         <td>
 
           <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:99.5% ; height: 100%;">
@@ -144,7 +157,7 @@
         </td>
       </tr>
       <tr>
-        <td>mis1<br><button id="6" >add </button>
+        <td>mis1<br><button id="6"  class="b">add </button>
         </td>
         <td>
 
@@ -164,7 +177,7 @@
         </td>
       </tr>
       <tr>
-        <td>skill<br><button id="7" >add </button></td>
+        <td>skill<br><button id="7" class="b" >add </button></td>
         <td>
 
           <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:99.5% ; height: 100%;">
@@ -182,7 +195,7 @@
         </td>
       </tr>
       <tr>
-        <td>work<br><button id="8" >add </button></td>
+        <td>work<br><button id="8"  class="b">add </button></td>
         <td>
 
           <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:99.5% ; height: 100%;">
@@ -201,7 +214,7 @@
         </td>
       </tr>
       <tr>
-        <td>Obdience<br><button id="9" >add </button></td>
+        <td>Obdience<br><button id="9" name="b"  class="b">add </button></td>
         <td>
 
           <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:99.5% ; height: 100%;">
@@ -248,8 +261,12 @@
 
    
    
-    <button id="print" onclick="printss();">Print</button>
+    <button id="cmd" onclick="printss();" class="b">Print</button>
+<br>
+    
     <script>
+      
+
       $("button").click(function() {
           ID=this.id;
           console.log(ID)
@@ -259,34 +276,29 @@
       });
 
       function printss(){
-            
+       
+       
+
             $('.a').css({
                 'border': '0',
                 'outline': '0',
             });
-    
+            $('.b').css({
+                'display':'none',
+            });
+
+           window.print();
+
+           
 
         }
 
       
-      // var count = 1;
-      //   function add_fields() {
-      //     document.getElementById('wrapper').innerHTML += dummy;
-      //       var dummy = '<input list="browsers" name="browser" class="'+count+'" id="browser '+count+'" style="display:table-cell; width:99.5% ; height: 100%;"><datalist id="browsers"><option value="Edge"><option value="हिंदी में ज्ञान की बातें"><option value="Chrome"><option value="Opera"><option value="Safari"></datalist>';
-      //       document.getElementById('wrapper').innerHTML += dummy;  
-      //       count++;
-      //       console.log(count)
-      //   }
-      //   function printss(){
-            
-      //       $('.a').css({
-      //           'border': '0',
-      //           'outline': '0',
-      //       });
-    
-
-      //   }
+      
+      
     </script>
+   <script src="pdff.js"></script>
+    
     
 </body>
 </html>
