@@ -52,6 +52,19 @@
   text-align: center;
 }
 
+#txtarea { border: 1px solid #f0f040; background-color: #fffff0; width: 100%; padding: 4px; margin: 5px; }
+   
+#content table td#tdContainer {
+    width: 100%;
+    height: 100%;
+}
+
+#innerDiv {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+}
+
   </style>
 
 </head>
@@ -75,7 +88,7 @@
             </datalist><br>
           
       </th>
-      <th style="vertical-align: middle;"><h1 style="font-family: Arial, Helvetica, sans-serif;">आकारिक मूल्यमापन वर्णनात्मक </h1></th>
+      <th style="vertical-align: middle;"><h2 style="font-family: Arial, Helvetica, sans-serif;">आकारिक मूल्यमापन वर्णनात्मक </h2></th>
     </tr>
     <tr>
       <td> विद्यार्थ्यांचे नाव : <input type="text" class="a" >
@@ -123,7 +136,7 @@
         <td>इंग्रजि<br><button id="3"  class="b">add </button></td>
         <td>
 
-          <input class="a"  list="browsers" name="browser" id="browser" style="display:table-cell; width:99.5% ; height: 100%;">
+          <input class="a"  list="browsers" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
           <datalist id="browsers">
             
             <option value="Safari">
@@ -139,7 +152,7 @@
         <td>गणित<br><button id="4"  class="b">add </button></td>
         <td>
 
-          <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:99.5% ; height: 100%;">
+          <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
           <datalist id="browsers">
             <option value="Edge">
             <option value="हिंदी में ज्ञान की बातें">
@@ -158,7 +171,7 @@
         <td>विज्ञान<br><button id="5"  class="b">add </button></td>
         <td>
 
-          <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:99.5% ; height: 100%;">
+          <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
           <datalist id="browsers">
             <option value="Edge">
             <option value="हिंदी में ज्ञान की बातें">
@@ -178,7 +191,7 @@
         </td>
         <td>
 
-          <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:99.5% ; height: 100%;">
+          <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
           <datalist id="browsers">
             <option value="Edge">
             <option value="हिंदी में ज्ञान की बातें">
@@ -197,7 +210,7 @@
         <td>कला<br><button id="7" class="b" >add </button></td>
         <td>
 
-          <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:99.5% ; height: 100%;">
+          <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
           <datalist id="browsers">
             <option value="Edge">
             <option value="हिंदी में ज्ञान की बातें">
@@ -215,7 +228,7 @@
         <td>कार्या<br><button id="8"  class="b">add </button></td>
         <td>
 
-          <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:99.5% ; height: 100%;">
+          <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
           <datalist id="browsers">
             <option value="Edge">
             <option value="हिंदी में ज्ञान की बातें">
@@ -234,7 +247,7 @@
         <td>शाशी <br><button id="9" name="b"  class="b">add </button></td>
         <td>
 
-          <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:99.5% ; height: 100%;">
+          <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
           <datalist id="browsers">
             <option value="Edge">
             <option value="हिंदी में ज्ञान की बातें">
@@ -256,17 +269,21 @@
           <th> आवड छंद (कला क्रीडा साहित्य ई.)</th>
       </tr>
       <tr>
-        <td>
-          <div class="bottom_left">
+        <td >
+          <div class="bottom_left" >
 
-              <input type="text" class="b"
+            <textarea id="w3review"  name="w3review" rows="10" cols="35" >
+              
+            </textarea>
 
           </div>
         </td>
         <td>
           <div class="bottom_right"> 
 
-            <input type="text" class="b">
+            <textarea id="w3review"  name="w3review" rows="10" cols="35">
+              
+            </textarea>
 
           </div>
         </td>
