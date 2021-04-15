@@ -79,7 +79,7 @@ textarea {
 <body>
   <table>
     <tr>
-      <th>सत्र :
+      <th style="width:25%;">सत्र :
         <input class="a" list="sem" name="browser" id="browser" style="display:table-cell; width:20% ; height: 20%;">
             <datalist id="sem">
                 <option value="प्रथम ">
@@ -90,10 +90,9 @@ textarea {
       <th style="vertical-align: middle;"><h2 style="font-family: Arial, Helvetica, sans-serif;">आकारिक मूल्यमापन वर्णनात्मक </h2></th>
     </tr>
     <tr>
-      <td> विद्यार्थ्यांचे नाव : <input type="text" class="a" >
-       
-      </td>
-      <td>इयत्ता : <input type="text" class="a" ></td>
+      <td><b>इयत्ता : <b><input type="text" class="a" ></td>
+      <td> <b> विद्यार्थ्यांचे नाव : <b><input type="text" class="a" size="40"></td>
+      
     </tr>
   
   </table>
@@ -253,11 +252,11 @@ textarea {
       </tr>
       <tr>
         <td>
-          <textarea style="width: 100%; height: 100%; " rows="10" cols="35">
+          <textarea style="width: 100%; height: 100%; " rows="6" cols="35">
           </textarea>
       </td>
       <td>
-        <textarea style="width: 100%; height: 100%; border: none" rows="10" cols="35">
+        <textarea style="width: 100%; height: 100%; border: none" rows="6" cols="35">
         </textarea>
       </td>
       </tr>
@@ -282,6 +281,9 @@ textarea {
       $("button").click(function() {
           ID=this.id;
           console.log(ID)
+
+          //  probable if condition to check which datalist to enter on which click else the data list may mixup
+
           var dummy = '<input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;"><datalist id="browsers"><option value="Edge"><option value="हिंदी में ज्ञान की बातें"><option value="Chrome"><option value="Opera"><option value="Safari"></datalist>';
           document.getElementById('wrapper'+ID+'').innerHTML += dummy;  
 
