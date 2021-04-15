@@ -65,6 +65,14 @@
     background-color: green;
 }
 
+textarea {
+    border: none;
+    width: 100%;
+    -webkit-box-sizing: border-box; /* <=iOS4, <= Android  2.3 */
+       -moz-box-sizing: border-box; /* FF1+ */
+            box-sizing: border-box; /* Chrome, IE8, Opera, Safari 5.1*/
+}
+
   </style>
 
 </head>
@@ -72,19 +80,10 @@
   <table>
     <tr>
       <th>सत्र :
-        <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:20% ; height: 20%;">
-            <datalist id="browsers">
-                <option value="1">
-                <option value="2">
-                <option value="भाषण करताना अगदी सहजपणे बोलतो">
-                <option value="हिंदी में ज्ञान की बातें">
-                  <option value="भाषण करताना अगदी सहजपणे बोलतो">
-                    <option value="बोलीभाषेचा वापर करतो">
-                    <option value="बोलताांना योग्य वयाप्रमाणे सांबोधतो">
-                    <option value="स्वताच्या गरजा योग्य भाषेत साांगतो">
-                <option value="Chrome">
-                <option value="Opera">
-                <option value="Safari">
+        <input class="a" list="sem" name="browser" id="browser" style="display:table-cell; width:20% ; height: 20%;">
+            <datalist id="sem">
+                <option value="प्रथम ">
+                <option value="दुतिय">
             </datalist><br>
           
       </th>
@@ -109,13 +108,11 @@
       <!-- onclick="add_fields();" -->
         <td>मराठी<br><button id="1" class="b">add </button></td>
         <td>
-            <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
-            <datalist id="browsers">
-                <option value="भाषण करताना अगदी सहजपणे बोलतो">
-                <option value="हिंदी में ज्ञान की बातें">
-                <option value="Chrome">
-                <option value="Opera">
-                <option value="Safari">
+            <input class="a" list="marathi" name="alex" id="hello" style="display:table-cell; width:100% ; height: 100%;">
+            <datalist id="marathi">
+                <option value="marathi">
+                
+                
             </datalist><br>
             <div id="wrapper1">
 
@@ -125,21 +122,24 @@
     <tr>
       <td>हिंदी<br><button id="2"  class="b">add </button></td>
       <td>
-          <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
-          <br>
+        <input class="a" list="hindi" name="alex" id="hello" style="display:table-cell; width:100% ; height: 100%;">
+        <datalist id="hindi">
+            <option value="hindi">
+            
+        </datalist><br>
           <div id="wrapper2">
 
           </div>
       </td>    
     </tr>
     <tr>
-        <td>इंग्रजि<br><button id="3"  class="b">add </button></td>
+        <td>इंग्रजी<br><button id="3"  class="b">add </button></td>
         <td>
 
-          <input class="a"  list="browsers" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
-          <datalist id="browsers">
+          <input class="a"  list="english" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
+          <datalist id="english">
             
-            <option value="Safari">
+            <option value="english">
           </datalist><br>
           <div id="wrapper3">
 
@@ -152,13 +152,10 @@
         <td>गणित<br><button id="4"  class="b">add </button></td>
         <td>
 
-          <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
-          <datalist id="browsers">
-            <option value="Edge">
-            <option value="हिंदी में ज्ञान की बातें">
-            <option value="Chrome">
-            <option value="Opera">
-            <option value="Safari">
+          <input class="a" list="maths" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
+          <datalist id="maths">
+            <option value="maths">
+            
           </datalist><br>
           <div id="wrapper4">
 
@@ -168,16 +165,13 @@
         </td>
       </tr>
       <tr>
-        <td>विज्ञान<br><button id="5"  class="b">add </button></td>
+        <td>सा.विज्ञान<br><button id="5"  class="b">add </button></td>
         <td>
 
-          <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
-          <datalist id="browsers">
-            <option value="Edge">
-            <option value="हिंदी में ज्ञान की बातें">
-            <option value="Chrome">
-            <option value="Opera">
-            <option value="Safari">
+          <input class="a" list="science" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
+          <datalist id="science">
+            <option value="science">
+           
           </datalist><br>
           <div id="wrapper5">
 
@@ -187,17 +181,14 @@
         </td>
       </tr>
       <tr>
-        <td>स.शास्त्र<br><button id="6"  class="b">add </button>
+        <td>सामाजिक शास्त्रे<br><button id="6"  class="b">add </button>
         </td>
         <td>
 
-          <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
-          <datalist id="browsers">
-            <option value="Edge">
-            <option value="हिंदी में ज्ञान की बातें">
-            <option value="Chrome">
-            <option value="Opera">
-            <option value="Safari">
+          <input class="a" list="history" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
+          <datalist id="history">
+            <option value="history">
+            
           </datalist><br>
           <div id="wrapper6">
 
@@ -210,13 +201,10 @@
         <td>कला<br><button id="7" class="b" >add </button></td>
         <td>
 
-          <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
-          <datalist id="browsers">
-            <option value="Edge">
-            <option value="हिंदी में ज्ञान की बातें">
-            <option value="Chrome">
-            <option value="Opera">
-            <option value="Safari">
+          <input class="a" list="skill" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
+          <datalist id="skill">
+            <option value="skill">
+           
           </datalist><br>
           <div id="wrapper7">
 
@@ -228,13 +216,10 @@
         <td>कार्या<br><button id="8"  class="b">add </button></td>
         <td>
 
-          <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
-          <datalist id="browsers">
-            <option value="Edge">
-            <option value="हिंदी में ज्ञान की बातें">
-            <option value="Chrome">
-            <option value="Opera">
-            <option value="Safari">
+          <input class="a" list="work" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
+          <datalist id="work">
+            <option value="work">
+            
           </datalist><br>
           <div id="wrapper8">
 
@@ -244,16 +229,13 @@
         </td>
       </tr>
       <tr>
-        <td>शाशी <br><button id="9" name="b"  class="b">add </button></td>
+        <td>शा.शिक्षण <br><button id="9" name="b"  class="b">add </button></td>
         <td>
 
-          <input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
-          <datalist id="browsers">
-            <option value="Edge">
-            <option value="हिंदी में ज्ञान की बातें">
-            <option value="Chrome">
-            <option value="Opera">
-            <option value="Safari">
+          <input class="a" list="social-science" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;">
+          <datalist id="social-science">
+            <option value="social-science">
+           
           </datalist><br>
           <div id="wrapper9">
 
@@ -263,30 +245,21 @@
         </td>
       </tr>
     </table>
+
     <table>
       <tr>
           <th>विशेष प्रगती</th>
           <th> आवड छंद (कला क्रीडा साहित्य ई.)</th>
       </tr>
       <tr>
-        <td >
-          <div class="bottom_left" >
-
-            <textarea id="w3review"  name="w3review" rows="10" cols="35" >
-              
-            </textarea>
-
-          </div>
-        </td>
         <td>
-          <div class="bottom_right"> 
-
-            <textarea id="w3review"  name="w3review" rows="10" cols="35">
-              
-            </textarea>
-
-          </div>
-        </td>
+          <textarea style="width: 100%; height: 100%; " rows="10" cols="35">
+          </textarea>
+      </td>
+      <td>
+        <textarea style="width: 100%; height: 100%; border: none" rows="10" cols="35">
+        </textarea>
+      </td>
       </tr>
       
         
@@ -336,7 +309,7 @@
       
       
     </script>
-   <script src="pdff.js"></script>
+  
     
     
 </body>
