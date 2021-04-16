@@ -282,9 +282,41 @@ textarea {
           ID=this.id;
           console.log(ID)
 
+          if(ID == 1){
+            var dummy = '<input class="a" list="marathi" name="alex" id="hello" style="display:table-cell; width:100% ; height: 100%;">';
+          
+          }
+          else if(ID == 2){
+            var dummy = ' <input class="a" list="hindi" name="alex" id="hello" style="display:table-cell; width:100% ; height: 100%;">';
+         
+          }else if(ID == 3){
+
+            var dummy = ' <input class="a" list="english" name="alex" id="hello" style="display:table-cell; width:100% ; height: 100%;">';
+         }else if(ID == 4){
+            var dummy = ' <input class="a" list="maths" name="alex" id="hello" style="display:table-cell; width:100% ; height: 100%;">';
+
+         }else if(ID == 5){
+            var dummy = ' <input class="a" list="science" name="alex" id="hello" style="display:table-cell; width:100% ; height: 100%;">';
+                        
+          }else if(ID == 6){
+            var dummy = ' <input class="a" list="history" name="alex" id="hello" style="display:table-cell; width:100% ; height: 100%;">';
+                        
+        }else if(ID == 7){
+            var dummy = ' <input class="a" list="skill" name="alex" id="hello" style="display:table-cell; width:100% ; height: 100%;">';
+                        
+          }else if(ID == 8){
+            var dummy = ' <input class="a" list="work" name="alex" id="hello" style="display:table-cell; width:100% ; height: 100%;">';
+
+          }else if(ID == 9){
+            
+            var dummy = ' <input class="a" list="social-science" name="alex" id="hello" style="display:table-cell; width:100% ; height: 100%;">';
+                    
+          }
+         
+
           //  probable if condition to check which datalist to enter on which click else the data list may mixup
 
-          var dummy = '<input class="a" list="browsers" name="browser" id="browser" style="display:table-cell; width:100% ; height: 100%;"><datalist id="browsers"><option value="Edge"><option value="हिंदी में ज्ञान की बातें"><option value="Chrome"><option value="Opera"><option value="Safari"></datalist>';
+          
           document.getElementById('wrapper'+ID+'').innerHTML += dummy;  
 
       });
